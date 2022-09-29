@@ -12,20 +12,22 @@
   border-radius: 30px;
 }
 
-.txt:after{
+.txt:before, .txt:after{
+  position: absolute;
   content: "";
+
+}
+
+.txt:after{
   border: 19px solid transparent;
   border-top: 19px solid #fad296;
-  position: absolute;
   left: 31px;
   bottom: -37px;
 }
 
 .txt:before{
-  content: "";
   border: 20px solid transparent;
   border-top: 20px solid #8f5a0a;
-  position: absolute;
   left: 30px;
   bottom: -45px;
 }

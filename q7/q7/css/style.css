@@ -15,19 +15,16 @@
 .txt:before, .txt:after{
   position: absolute;
   content: "";
-
+  border: 20px solid transparent;
+  left: 30px;
 }
 
 .txt:after{
-  border: 19px solid transparent;
-  border-top: 19px solid #fad296;
-  left: 31px;
-  bottom: -37px;
+  border-top: 20px solid #fad296;
+  bottom: -38px;
 }
 
 .txt:before{
-  border: 20px solid transparent;
   border-top: 20px solid #8f5a0a;
-  left: 30px;
   bottom: -45px;
 }

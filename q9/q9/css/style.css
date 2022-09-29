@@ -2,3 +2,122 @@
 
 /* カード内の画像は以下のURLを使用して下さい */
 /* https://picsum.photos/id/1005/200/300 */
+
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: #76ff826b;
+  margin: 0 auto;
+}
+
+.fadein{
+  animation: fadeIn 4s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.fadeout{
+  animation: fadeOut 4s ease 4s 1 normal;
+}
+@keyframes fadeOut {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}
+
+.rotate{
+  animation: r1 4s linear infinite;
+}
+@keyframes r1 {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.bluebox{
+  width: 200px;
+  height: 200px;
+  background-color: #331aefd0;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.pink:hover{
+  background-color: #ff27e2c9;
+}
+
+.rotate360:hover{
+  transform: rotate(360deg);
+}
+
+.slideup:hover{
+  transform: translate(0, -20%);
+}
+
+.slideright:hover{
+  transform: translate(20%, 0);
+}
+
+.extend-h:hover{
+  height: 300px;
+}
+
+.extend-w:hover{
+  width:500px;
+}
+
+.frame:hover{
+  border: 10px #00ffe5 solid;
+  box-sizing:border-box;
+}
+
+.shadow:hover{
+  box-shadow: 8px 11px 10px 3px #06031ed0;
+}
+
+.loading{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 10px solid #ecf1f2;
+  border-top: 10px solid #14ff4bcd;
+  animation: r1 1.1s linear infinite;
+  margin: auto;
+}
+
+.cardlist{
+  display:flex;
+}
+
+.card{
+  border: 1px solid #000000;
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  transition:0.5s;
+  border-right: none;
+}
+
+.card:last-child{
+  border-right: 1px solid #000000;
+}
+
+.card:hover{
+  box-shadow: 0px 0px 10px 3px #424242d0;
+  z-index: 1;
+}
+
+p{
+  margin-top: 20px;
+}
+
+.imagebox{
+  background-image: url(https://picsum.photos/id/1005/200/300);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
